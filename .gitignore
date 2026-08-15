@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SipHash generated datasets
+siphash_datasets_1block_tag/
+siphash_datasets_2blocks_tag/
+siphash_internal_ml_dataset/
+
+# SipHash recurrence plot images
+siphash_datasets_1block_tag_rp/
+siphash_datasets_2blocks_tag_rp/
+siphash_internal_ml_dataset_rp/
+
+# Trained ML models
+*.pt
+*.pth
+*.ckpt
+
+# Experiment outputs
+result/
