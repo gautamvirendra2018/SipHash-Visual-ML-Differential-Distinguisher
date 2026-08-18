@@ -277,7 +277,7 @@ def save_dataset_to_csv(X, Y, c, d, hw,out_dir):
 # =========================================================
 
 if __name__ == "__main__":
-    n_samples = 115536
+    n_samples = 181072
 
     os.makedirs(out_dir, exist_ok=True)
 
@@ -317,9 +317,7 @@ if __name__ == "__main__":
         for hw in range(1, 3): # Set Hamming weight for Delta
 
             delta = generate_delta(hw)
-            if c > 2:
-                n_samples = 181072
-
+            
             print("\n")
             print("=" * 70)
             print(f"Generating Dataset")

@@ -132,7 +132,7 @@ def save_dataset_to_csv(X, Y, c, d, hw, out_dir):
 # =========================================================
 if __name__ == "__main__":
 
-    n_samples = 115536
+    n_samples = 181072
 
     out_dir = "siphash_datasets_2blocks_tag"
     os.makedirs(out_dir, exist_ok=True)
@@ -144,9 +144,6 @@ if __name__ == "__main__":
             for hw in range(1, 3): # Set Hamming Weight to create input Delta
 
                 delta = generate_delta_128(hw)
-
-                if c>2:
-                    n_samples = 181072
 
                 X, Y = generate_dataset(n_samples//2, c, d, delta, seed=0)
 
